@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Responsive Day Out 2</title>
+
     <!-- build:css styles/styles.css-->
     <link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -13,64 +14,164 @@
     <article>
       <section>
         <h1>Responsive Day Out 2</h1>
+        <h2>Some Notes</h2>
       </section>
-      <section>
-        <h2>Keyboard Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
-      </section>
-      <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
-      </section>
-      <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
-      </section>
-      <section>
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
+
+      <section data-bespoke-hash="Sculpting-Text">
+        <h2>Sculpting Text</h2>
+        <h3>Stephen Hay (<a href="https://twitter.com/stephenhay">@stephenhay</a>)</h3>
+        <h4>Key takeaways</h4>
+
         <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
+          <li>HTML is responsive by default</li>
+          <li>Start with content then bring in design. Most websites are built out of containers that content gets crammed in to as an afterthought.</li>
+          <li>Start simple (no columns, no complex styles)</li>
+          <li>Design in the browser using new dev tools </li>
+          <li>"Content break points, not device break points"</li>
+        </ul>
+
+        <p>Slides: <a href="https://speakerdeck.com/stephenhay/sculpting-text">https://speakerdeck.com/stephenhay/sculpting-text</a></p>
+      </section>
+
+      <section data-bespoke-hash="More-Than-Media-Queries">
+        <h2>More Than Media Queries</h2>
+        <h3>Sally Jenkinson (<a href="https://twitter.com/sjenkinson">@sjenkinson</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li><em>"If you ship something fast knowing it's shitty code, that's on you. Be responsible."</em></li>
+          <li>Planning</li>
+          <li>Ethics<ul>
+          <li>Do you know what's best for the user? Do you <em>need</em> the user's location/contacts/call history ala Facebook?)</li>
+          <li>What about accessibility?</li>
+          <li>Responsibility (light level as an example of something that can be irresponsibly used)</li>
+        </ul>
+
+        <p>Slides: <a href="http://www.slideshare.net/sallyjenkinson/more-than-media-queries-responsive-day-out-2">http://www.slideshare.net/sallyjenkinson/more-than-media-queries-responsive-day-out-2</a></p>
+      </section>
+
+      <section data-bespoke-hash="Batman-Says">
+        <img src="http://image.slidesharecdn.com/final-export-140628043659-phpapp02/95/slide-12-638.jpg">
+      </section>
+
+      <section data-bespoke-hash="The-Core-Model">
+        <h2>The Core Model</h2>
+        <h3>Ida Aalen (<a href="https://twitter.com/idaAa">@idaAa</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li>Finding core pages based the overlap between business goals and user tasks</li>
+          <li>Prioritize content that users want and meets business goals.</li>
+          <li>Think about natural flows between pages. What might the user want next? </li>
+          <li>Don't spend too much time thinking about the home page</li>
+          <li>People fill out forms on mobile and she has the proof!</li>
+        </ul>
+
+        <p>Slides: <a href="http://www.slideshare.net/idaiskald/core-model-thinking-at-the-norwegian-cancer-society-responsive-day-out-brighton-june-27th">http://www.slideshare.net/idaiskald/core-model-thinking-at-the-norwegian-cancer-society-responsive-day-out-brighton-june-27th</a></p>
+      </section>
+
+      <section data-bespoke-hash="CSS-Grid-Layout">
+        <h2>CSS Grid Layout</h2>
+        <h3>Rachel Andrew (<a href="https://twitter.com/rachelandrew">@rachelandrew</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li>CSS Grids are good but somewhat complex.</li>
+          <li>Can really help separate content from design.</li>
+          <li>Will likely be more useful than Flexbox for layout. Flexbox is more suited to module-level CSS.</li>
+        </ul>
+
+        <p>Slides and Stuff: <a href="http://www.rachelandrew.co.uk/presentations/css-grid">http://www.rachelandrew.co.uk/presentations/css-grid</a></p>
+      </section>
+
+      <section data-bespoke-hash="Element-Queries">
+        <h2>Element Queries</h2>
+        <h3>Dan Donald (<a href="https://twitter.com/hereinthehive">@hereinthehive</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li>Media queries are good but what about modular components which should be shielded from knowing about the viewport width (what if you put it in a smaller column?)</li>
+          <li>Element queries are being considered for future versions of CSS but bring tricky problems that browsers would rather not think about (infinite loops for one)</li>
+          <li>Dan has come up with some ideas involving data-attributes and JS.</li>
+          <li>The BBC takes progressive enhancement very seriously. Every client gets all the content and then if a browser can "cut the mustard" they will be enhanced with richer interactions</li>
+        </ul>
+
+        <p>Blog <a href="http://responsivenews.co.uk/post/18948466399/cutting-the-mustard">here</a></p>
+      </section>
+
+      <section data-bespoke-hash="Realistic-Responsive-Design">
+        <h2>Realistic Responsive Design</h2>
+        <h3>Inayaili de León Persson (<a href="https://twitter.com/yaili">@yaili</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li>Responsifying ubuntu.com was difficult</li>
+          <li>Buy lots of test devices</li>
+          <li>Set rules that can be used for most cases (thing x goes next to thing y in scenario z)</li>
         </ul>
       </section>
-      <section>
-        <h2>Syntax Highlighting</h2>
-        <h3>Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3>
-        <hr>
-        <pre><code class="language-javascript">bespoke.from('article', {
-  keys: true,
-  touch: true,
-  hash: true,
-  state: true,
-  bullets: 'li, .bullet'
-});
-</code></pre>
+
+      <section data-bespoke-hash="Fonz-Double">
+        <img src="https://www.flickr.com/photos/marcthiele/14339045939/in/set-72157645354768166/">
       </section>
-      <section data-bespoke-hash="named-route">
-        <h2>Named Route</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
-        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
-      </section>
-      <section data-bespoke-state="emphatic">
-        <h2>Emphatic Slide!</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3>
-      </section>
-      <section>
-        <h2 class="bullet">Just the beginning...</h2>
-        <hr>
+
+      <section data-bespoke-hash="The-Container-Model">
+        <h2>The Container Model</h2>
+        <h3>Oliver Reichenstein (<a href="https://twitter.com/reichenstein">@reichenstein</a>)</h3>
+        <h4>Key takeaways</h4>
+
         <ul>
-          <li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li>
-          <li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li>
-          <li>Edit JavaScript in <em>'src/scripts/main.js'</em></li>
+          <li>Information Architecture is important</li>
+          <li>Don't let company politics decide what information is available to the user</li>
+          <li>Prioritize </li>
+          <li>Columns and carousels exist only to suit department leads</li>
+          <li>Never place unrelated content on to one row just because it looks nice, fits nice or plays nicely with office politics. Only group content logically.</li>
         </ul>
-        <hr>
+
+        <p>How The Guardian have used this <a href="http://next.theguardian.com/blog/container-model-blended-content/">here</a></p>
+        <p>Guardian responsive site: <a href="http://www.theguardian.com/uk?view=mobile">here</a></p>
+        <p>GitHub: <a href="https://github.com/guardian/frontend">here</a></p>
+      </section>
+
+      <section data-bespoke-hash="A-Question-of-Deliverables">
+        <h2>A Question of Deliverables</h2>
+        <h3>Kirsty Burgoine (<a href="https://twitter.com/KirstyBurgoine">@KirstyBurgoine</a>)</h3>
+        <h4>Key takeaways</h4>
+
         <ul>
-          <li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li>
+          <li>Learn from your mistakes</li>
+          <li>Be clear on what you are going to deliver vs what you are not</li>
+        </ul>
+      </section>
+
+      <section data-bespoke-hash="The-Future-of-Media-Queries">
+        <h2>The Future of Media Queries?</h2>
+        <h3>Stephanie Reiger</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li><code>scripting</code> - The real issue is bad JS or JS that only partially loads.</li>
+          <li><code>light-level</code> - Could be useful but poor hardware will likely make this risky to use.</li>
+          <li><code>pointer</code> and <code>hover</code> - Sounds good but multi-input devices will cause confusion</li>
+          <li><code>update-frequency</code> - Detect if complex animations would be appropriate. Could be good.</li>
+          <li><code>overflow-block</code> and <code>overflow-inline</code> - How a viewport can overflow. Desktops can scroll but smart-watches maybe not.</li>
+          <li>Was anyone asking for these features?</li>
+        </ul>
+      </section>
+
+      <section data-bespoke-hash="Laziness-in-the-time-of-Responsive-Design">
+        <h2>Laziness in the time of Responsive Design</h2>
+        <h3>Ethan Marcotte (<a href="https://twitter.com/beep">@beep</a>)</h3>
+        <h4>Key takeaways</h4>
+
+        <ul>
+          <li>Laziness is good for developers.</li>
+          <li>Start with basics and add light touches.</li>
+          <li>Progressive enhancement is the ultimate laziness.</li>
         </ul>
       </section>
     </article>
+
     <!-- build:js scripts/scripts.js-->
     <script src="bower_components/bespoke.js/dist/bespoke.min.js"></script>
     <script src="bower_components/bespoke-keys/dist/bespoke-keys.min.js"></script>
